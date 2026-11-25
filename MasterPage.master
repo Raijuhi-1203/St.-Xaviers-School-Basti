@@ -1,0 +1,312 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <title>St. Xavier's Senior Secondary School Basti | CBSE Affiliated</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="St. Xavier's Senior Secondary School Basti, Best School in Basti, CBSE School Basti, Xavier School Katra Basti, Admissions St Xavier Basti" name="keywords">
+    <meta content="St. Xavier's Senior Secondary School, Basti is a premier CBSE-affiliated English medium co-educational institution dedicated to academic excellence, discipline, and holistic character development." name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon" type="image/png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet with Brand Color Theme -->
+    <link href="css/style.css?v=2.4" rel="stylesheet">
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3.5rem; height: 3.5rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Top Utility Bar Start -->
+        <div class="school-topbar py-2 d-none d-lg-block">
+            <div class="container-fluid px-lg-5">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <div class="d-flex align-items-center gap-3 flex-wrap">
+                            <span class="topbar-badge"><i class="fas fa-certificate me-1"></i> CBSE Affiliated</span>
+                            <span><i class="fas fa-code-branch text-gold me-1"></i> Affil No: <strong>2130680</strong> | School Code: <strong>70258</strong></span>
+                            <span class="text-white-50">|</span>
+                            <a href="tel:+91-9792277113"><i class="fas fa-phone-alt text-gold me-1"></i> +91-9792277113</a>
+                            <span class="text-white-50">|</span>
+                            <a href="mailto:xaviersbasti@gmail.com"><i class="fas fa-envelope text-gold me-1"></i> xaviersbasti@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 text-end">
+                        <div class="d-inline-flex align-items-center gap-3">
+                            <a href="disclosure.html" class="text-white-50 hover-gold text-decoration-none small"><i class="fas fa-file-contract text-gold me-1"></i> Mandatory Disclosure</a>
+                            <span class="text-white-50">|</span>
+                            <a href="#admission" class="text-gold fw-bold text-decoration-none small"><i class="fas fa-user-graduate me-1"></i> Admissions 2026-27</a>
+                            <span class="text-white-50">|</span>
+                            <div class="d-inline-flex gap-2">
+                                <a class="text-white-50 hover-gold" href="https://share.google/wbhwX2RnjxrF8vXia" target="_blank" title="Facebook"><i class="fas fa-location-arrow"></i></a>
+                                <a class="text-white-50 hover-gold" href="https://www.facebook.com/xaviers" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a class="text-white-50 hover-gold" href="https://www.youtube.com/@St.XaviersSr.Sec.School-Basti" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                                <a class="text-white-50 hover-gold" href="https://www.instagram.com/st.xaviersbasti/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Utility Bar End -->
+
+        <!-- Middle Brand Header Start -->
+        <div class="school-brand-header py-3">
+            <div class="container-fluid px-lg-5">
+                <div class="row align-items-center">
+                    <!-- Logo and Title Area -->
+                    <div class="col-lg-8 col-md-12">
+                        <div class="d-flex align-items-center">
+                            <a href="index.aspx" class="text-decoration-none flex-shrink-0 me-3 me-sm-4">
+                                <img src="img/logo.png" alt="St. Xavier's Senior Secondary School Basti Logo" class="school-logo-img shadow-sm rounded-circle p-1 bg-white border border-2 border-primary" />
+                            </a>
+                            <div>
+                                <h1 class="school-title-main mb-1">ST. XAVIER'S SENIOR SECONDARY SCHOOL</h1>
+                                <p class="school-subtitle mb-1">
+                                    <i class="fas fa-map-marker-alt text-secondary me-1"></i> Dwijesh Marg, Basti (U.P.) - 272001
+                                </p>
+                                <div class="d-flex align-items-center gap-2 flex-wrap">
+                                    <span class="badge bg-primary text-white"><i class="fas fa-award text-gold me-1"></i> CBSE Affiliated (10+2)</span>
+                                    <span class="school-motto-tag"><i class="fas fa-quote-left text-secondary me-1"></i> DISCIPLINE & JUSTICE <i class="fas fa-quote-right text-secondary ms-1"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Quick Contacts and CTA -->
+                    <div class="col-lg-4 d-none d-lg-block text-end">
+                        <div class="d-inline-flex align-items-center gap-3">
+                            <div class="header-info-item text-start">
+                                <div class="header-info-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div>
+                                    <small class="text-muted text-uppercase fw-bold d-block" style="font-size: 11px;">Admission Helpdesk</small>
+                                    <a href="tel:+919792277113" class="fw-bold text-primary text-decoration-none fs-6">+91-9792277113</a>
+                                </div>
+                            </div>
+                            <a href="#admission" class="btn btn-secondary px-3 py-2 fw-bold text-nowrap shadow-sm">
+                                <i class="fas fa-edit me-1"></i> Apply Online
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Middle Brand Header End -->
+
+        <!-- Main Navigation Bar Start -->
+        <nav class="navbar navbar-expand-lg school-navbar sticky-top">
+            <div class="container-fluid px-lg-5">
+                <a href="index.aspx" class="navbar-brand d-lg-none d-flex align-items-center text-white py-2">
+                    <img src="img/logo.png" alt="Logo" style="height: 42px;" class="me-2 rounded-circle bg-white p-1" />
+                    <span class="fw-bold fs-6">ST. XAVIER'S BASTI</span>
+                </a>
+                <button type="button" class="navbar-toggler text-white border-white me-2 my-2" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-white fs-4"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav me-auto">
+                        <a href="index.aspx" class="nav-item nav-link active"><i class="fas fa-home me-1"></i> Home</a>
+                        
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                            <div class="dropdown-menu">
+                                <a href="about-school.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>About School</a>
+                                <a href="vision-mision.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Vision & Mission</a>
+                                <a href="manager-desk.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Manager's Desk</a>
+                                <a href="principal-desk.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Principal's Desk</a>
+                                <a href="core-value.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Core Values & Motto</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Academics</a>
+                            <div class="dropdown-menu">
+                                <a href="curriculum.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>CBSE Curriculum</a>
+                                <a href="wings.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Academic Wings (Pre-Primary to XII)</a>
+                                <a href="wings.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Streams Offered (Science & Commerce)</a>
+                                <a href="guideline-exam.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Examination Guidelines</a>
+                                <a href="guideline-parents.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Guideline for Parents</a>
+                                <a href="school-timing.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>School Timings</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Campus & Facilities</a>
+                            <div class="dropdown-menu">
+                                <a href="school-facility.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>All Facilities</a>
+                                <a href="facilities.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Digital Smart Classrooms</a>
+                                <a href="facilities.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Science & Computer Laboratories</a>
+                                <a href="facilities.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Library & Learning Center</a>
+                                <a href="facilities.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Sports, Games & Playground</a>
+                                <a href="facilities.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Safe School Transportation</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Admissions</a>
+                            <div class="dropdown-menu">
+                                <a href="admission.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Admission Process 2026-27</a>
+                                <a href="admission.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Eligibility & Guidelines</a>
+                                <a href="admission.aspx" class="dropdown-item"><i class="fas fa-angle-right text-gold me-2"></i>Enquiry Form</a>
+                            </div>
+                        </div>
+
+                        <a href="disclosure.aspx" class="nav-item nav-link">Mandatory Disclosure</a>
+                        <a href="gallery.aspx" class="nav-item nav-link">Gallery</a>
+                        <a href="contact.aspx" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                    
+                    <div class="d-flex align-items-center gap-2 py-2 py-lg-0">
+                        <a href="admission.aspx" class="btn btn-gold btn-sm px-3 py-2 fw-bold text-nowrap">
+                            <i class="fas fa-pen-nib me-1"></i> Admission Enquiry
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- Main Navigation Bar End -->
+
+        <!-- Main Body Content Placeholder -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+
+    <!-- School Footer Start -->
+    <footer class="school-footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Column 1: School Identity -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="img/logo.png" alt="Logo" class="rounded-circle bg-white p-1 me-3 shadow" style="width: 65px; height: 65px; object-fit: contain;" />
+                        <div>
+                            <h5 class="text-white mb-0" style="font-size: 1.15rem;">ST. XAVIER'S SR. SEC. SCHOOL</h5>
+                            <small class="text-gold fw-bold">Basti, Uttar Pradesh</small>
+                        </div>
+                    </div>
+                    <p class="small text-white-50 mb-3" style="line-height: 1.6;">
+                        Affiliated to the Central Board of Secondary Education (CBSE), New Delhi (Affiliation No: <strong>2130680</strong>, School Code: <strong>70258</strong>). Committed to illuminating young minds through academic excellence, moral integrity, and social responsibility.
+                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-secondary text-white py-2 px-3 fw-bold"><i class="fas fa-award text-gold me-1"></i> Motto: "Displine & Justice"</span>
+                    </div>
+                    <div class="d-flex pt-2">
+                        <a class="footer-social-btn" href="https://share.google/wbhwX2RnjxrF8vXia" target="_blank" title="Google"><i class="fas fa-location-arrow"></i></a>
+                        <a class="footer-social-btn" href="https://www.facebook.com/xaviers" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="footer-social-btn" href="https://www.youtube.com/@St.XaviersSr.Sec.School-Basti" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a class="footer-social-btn" href="https://www.instagram.com/st.xaviersbasti/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h4>Quick Links</h4>
+                    <a class="footer-link" href="index.aspx"><i class="fas fa-angle-right text-gold me-2"></i>Home</a>
+                    <a class="footer-link" href="about-school.aspx"><i class="fas fa-angle-right text-gold me-2"></i>About School</a>
+                    <a class="footer-link" href="vision-mision.aspx"><i class="fas fa-angle-right text-gold me-2"></i>Vision & Mission</a>
+                    <a class="footer-link" href="manager-desk.aspx"><i class="fas fa-angle-right text-gold me-2"></i>Manager's Desk</a>
+                    <a class="footer-link" href="principal-desk.aspx"><i class="fas fa-angle-right text-gold me-2"></i>Principal's Desk</a>
+                    <a class="footer-link" href="disclosure.aspx"><i class="fas fa-angle-right text-gold me-2"></i>Mandatory Disclosure</a>
+                    <a class="footer-link" href="gallery.aspx"><i class="fas fa-angle-right text-gold me-2"></i>Photo Gallery</a>
+                </div>
+
+                <!-- Column 3: Academics & Admissions -->
+                <div class="col-lg-3 col-md-6">
+                    <h4>Academics & Info</h4>
+                    <a class="footer-link" href="curriculum.aspx"><i class="fas fa-angle-right text-gold me-2"></i>CBSE Curriculum</a>
+                    <a class="footer-link" href="wings.aspx"><i class="fas fa-angle-right text-gold me-2"></i>Pre-Primary to Class XII</a>
+                    <a class="footer-link" href="wings.aspx"><i class="fas fa-angle-right text-gold me-2"></i>Science & Commerce Streams</a>
+                    <a class="footer-link" href="guideline-exam.aspx"><i class="fas fa-angle-right text-gold me-2"></i>Examination Rules</a>
+                    <a class="footer-link" href="school-timing.aspx"><i class="fas fa-angle-right text-gold me-2"></i>School Timings</a>
+                    <a class="footer-link" href="school-facility.aspx"><i class="fas fa-angle-right text-gold me-2"></i>Campus Facilities</a>
+                    <a class="footer-link" href="admission.aspx"><i class="fas fa-angle-right text-gold me-2"></i>Admissions 2026-2027</a>
+                </div>
+
+                <!-- Column 4: Contact Details -->
+                <div class="col-lg-3 col-md-6">
+                    <h4>Campus Contact</h4>
+                    <p class="small text-white-50 mb-2">
+                        <i class="fas fa-map-marker-alt text-gold me-2"></i> Dwijesh Marg, Basti, Uttar Pradesh - 272001
+                    </p>
+                    
+                    <p class="small text-white-50 mb-2">
+                        <i class="fas fa-mobile-alt text-gold me-2"></i> <a href="tel:+919792277113" class="text-white-50 text-decoration-none">+91-9792277113</a>
+                    </p>
+                    <p class="small text-white-50 mb-3">
+                        <i class="fas fa-envelope text-gold me-2"></i> <a href="mailto:xaviersbasti@gmail.com" class="text-white-50 text-decoration-none">xaviersbasti@gmail.com</a>
+                    </p>
+                    <div class="p-2 rounded bg-white bg-opacity-10 border border-secondary">
+                        <small class="text-gold fw-bold d-block"><i class="fas fa-clock me-1"></i> Office Hours:</small>
+                        <small class="text-gold">MON - SAT : </small>
+                        <small class="text-gold">8:00 AM - 2:30 PM</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Bar -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-7 text-center text-md-start mb-2 mb-md-0">
+                        <span>&copy; <%= DateTime.Now.Year %> <strong>St. Xavier's Senior Secondary School, Basti</strong>. All Rights Reserved.</span>
+                        <span class="d-block d-sm-inline ms-sm-2 text-white-50">| Affiliated to CBSE, New Delhi</span>
+                    </div>
+                    <div class="col-md-5 text-center text-md-end">
+                        <a href="index.aspx" class="text-white-50 hover-gold text-decoration-none me-3 small">Home</a>
+                        <a href="disclosure.aspx" class="text-white-50 hover-gold text-decoration-none me-3 small">Mandatory Disclosure</a>
+                        <a href="contact.aspx" class="text-white-50 hover-gold text-decoration-none small">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- School Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg-square back-to-top" title="Back to Top" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
